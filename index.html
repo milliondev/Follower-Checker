@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follower Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div>
+            <h1>See Who Doesn't Follow You Back!</h1>
+            <p>No more searching through a list comparison tool, upload your files and immediately see who doesn't follow you back!</p>
+            <div class="steps-container">
+                <div class="step-card" id="step-1">
+                    <h3>Step 1:<br> Upload Your <b>following.json</b> file</h4>
+                        <input id="followingInput" type="file" accept="application/json">
+                </div>
+                <div class="step-card" id="step-2">
+                    <h3>Step 2:<br>Upload your <b>followers.json</b> file</h4>
+                        <input id="followerInput" type="file" accept="application/json">
+                </div>
+                <div class="step-card">
+                    <h3>Step 3:<br>Hit the button :)</h4>
+                        <button onclick="crosscheck()">Reveal Traitors</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="traitors">
+            <div id="traitor-info">
+                <h4 id="preview-text">The people who don't follow you back will appear here.</h4>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
